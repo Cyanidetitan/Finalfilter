@@ -1,6 +1,6 @@
 # Modified Version Of [Media Search bot](https://github.com/subinps/Media-Search-bot)
 
-## Example Bot [Imdb Bot](https://t.me/Paapanbot)
+## Example Bot [Imdb Bot](https://t.me/mw_cinemaprandhanbot)
 
 ## Added Features
 * Imdb posters for autofilter.
