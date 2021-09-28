@@ -31,7 +31,7 @@ async def start(bot, cmd):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                                InlineKeyboardButton("⚡Join Channel⚡", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
@@ -82,11 +82,11 @@ async def start(bot, cmd):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**Please Join Our Channel to use this Bot!☺**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                        InlineKeyboardButton("🍿Channel🍿", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -100,11 +100,11 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Source Code", url='https://github.com/Jinn-Of-Telegram/Media-Search-bot-v2'),
+                        InlineKeyboardButton("Source Code", url='https://github.com/staneswilson/Media-Search-bot-v2'),
                     ],
                    [
-                       InlineKeyboardButton("Update Channel", url='https://t.me/ErrorXbotz'),
-                       InlineKeyboardButton("Support Group", url='https://t.me/ErrorXsupport'),
+                       InlineKeyboardButton("⚡Channel⚡", url='https://t.me/MoveWilla_Links'),
+                       InlineKeyboardButton("🍿Group🍿", url='https://t.me/MoveWilla1'),
                     ],
                      [
                         InlineKeyboardButton("About", callback_data="about")
@@ -196,21 +196,21 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/ErrorXbotz'),
-            InlineKeyboardButton('Source Code', url='https://github.com/Jinn-Of-Telegram/Media-Search-bot-v2')
+            InlineKeyboardButton('⚡Channel⚡', url='https://t.me/MoveWilla_Links'),
+            InlineKeyboardButton('🍿Group🍿', url='https://t.me/MoveWilla1')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/Jinn_007'>꧁Ⓜⓤⓣⓗⓐⓛⓘⓑ_★࿐</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/Jinn-Of-Telegram/Media-Search-bot-V2'>Click here</a>\nUpdate Channel : <a href='https://t.me/ErrorXBotz'>ErrorXBotz</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Developer👷‍♂️ : <a href='https://t.me/TopLost3'>TopLost</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/TopLost3/Media-Search-bot-V2'>Click here</a>\n🌟Channel🌟 : <a href='https://t.me/MoveWilla_Links'>Movie Willa</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 @Client.on_message(filters.command('help'))
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/ErrorXbotz'),
-            InlineKeyboardButton('Support Group', url='https://t.me/ErrorXSupport')
+             InlineKeyboardButton('⚡Channel⚡', url='https://t.me/MoveWilla_Links'),
+            InlineKeyboardButton('🍿Group🍿', url='https://t.me/MoveWilla1')
         ]
         ]
-    await message.reply(text="<b>If You Have Any Doubts And If Any Errors In Codes Or Bugs Inform Us On Our Support Group ❗️\n Use Below Buttons To Get Support Group / Update channel Links </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>If You Have Any Doubts And If Any Errors In Codes Or Bugs Inform Our Developer</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 @Client.on_message(filters.command('info') & (filters.private | filters.group))
 async def showinfo(client, message):
