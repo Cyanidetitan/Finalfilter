@@ -13,12 +13,12 @@
 * Ability to restrict groups(AUTH_GROUPS)
 
 
-## If Any Doubts Ask In [Update Channel](https://t.me/ErrorXbotz), [Support Group](https://t.me/ErrorXsupport)
+## IF you want to request Movie [Channel](https://t.me/MoveWilla_Links), [Group](https://t.me/MoveWilla1)
 
 ## Installation
 
 ### Easy Way
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Jinn-Of-Telegram/Media-Search-bot-v2)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/staneswilson/Media-Search-bot-v2)
 ### Hard Way
 
 ```bash
@@ -39,6 +39,7 @@ Check [`sample_info.py`](sample_info.py) before editing [`info.py`](info.py) fil
 
 ### Thank You [Subinps](https://t.me/Subinps_bot)
 ### Thank You [Shamil || SmL](https://t.me/shamilnelli)
+### Thank You [ME | For Nothing](https://t.me/Toplost3)
 
 ## Variables
 
@@ -89,9 +90,9 @@ logger - Get log file
 
 
 ## Support
-Contact Me On [Telegram](https://t.me/Jinn_007)
+Contact Me On [Telegram](https://t.me/TopLost3)
 
-[Update Channel](https://t.me/ErrorXbotz)
+[Channel](https://t.me/MoveWilla_Links)
 
 ## License
 Code released under [The GNU General Public License](LICENSE).
