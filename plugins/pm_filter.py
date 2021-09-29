@@ -123,7 +123,7 @@ async def group(client, message):
         btn = []
 
         search = message.text
-        result_txt = f"**📺 Title: ** {search}\n**🌟 Rating: ** {random.choice(RATING)}\n**🎭 Genre: ** {random.choice(GENRES)}\n**©️ {message.chat.title} 🍿**"
+        result_txt = f"**📺Title : ** {search}\n**🌟Rating : ** {random.choice(RATING)}\n**🎭Genre : ** {random.choice(GENRES)}\n**©️ 🍿Movie WIlla🍿 **"
 
         nyva=BOT.get("username")
         if not nyva:
@@ -289,7 +289,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('⚡Channels⚡', url='https://t.me/MoveWilla_Links'),
                 ]
                 ]
-            await query.message.edit(text="<b>Developer : <a href='https://t.me/TopLost3'>TopLost</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n Group : <a href='https://t.me/MoveWilla1'>Movie Willa</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>Developer : <a href='https://t.me/TopLost3'>TopLost</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nGroup : <a href='https://t.me/MoveWilla1'>Movie Willa</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
