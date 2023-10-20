@@ -7,7 +7,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = 10247139
 API_HASH = "96b46175824223a33737657ab943fd6a"
-BOT_TOKEN = "6047442812:AAH4J2NbWRLRhgCbAwFuSrBbpBC1vPsasFs"
+BOT_TOKEN = "6730160843:AAEgtShMXPi-pVqDX7uF4miCvpO07uHlYRQ"
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -18,18 +18,18 @@ ADMINS = [5894098166]
 CHANNELS = [-1002100546607]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', "").split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = "-1001159872623"
+auth_channel = "-1001967738594"
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else auth_channel
 AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
 
 # MongoDB information
 DATABASE_URI = 'mongodb+srv://480p:encode@cluster0.7fgwrif.mongodb.net/?retryWrites=true&w=majority'
-DATABASE_NAME = 'filesharexbot'
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_NAME = 'teribehen'
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'merabhai')
 
 # Messages
 default_start_msg = """
-**Hi, I'm Somayuki**
+**Hi, I'm Pavillion**
 Here you can search files in Inline mode as well as PM, Use the below buttons to search files or send me the name of file to search.
 """
 START_MSG = environ.get('START_MSG', default_start_msg)
