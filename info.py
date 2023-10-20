@@ -7,7 +7,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = 10247139
 API_HASH = "96b46175824223a33737657ab943fd6a"
-BOT_TOKEN = "5222572158:AAENHtTOnhWBh4UUZKTjq5ruMtil_4zRA_0"
+BOT_TOKEN = "6047442812:AAH4J2NbWRLRhgCbAwFuSrBbpBC1vPsasFs"
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
