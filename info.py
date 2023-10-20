@@ -6,19 +6,19 @@ id_pattern = re.compile(r'^.\d+$')
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = 10247139
-API_HASH = '96b46175824223a33737657ab943fd6a'
-BOT_TOKEN = '5222572158:AAENHtTOnhWBh4UUZKTjq5ruMtil_4zRA_0'
+API_HASH = "96b46175824223a33737657ab943fd6a"
+BOT_TOKEN = "5222572158:AAENHtTOnhWBh4UUZKTjq5ruMtil_4zRA_0"
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ['5894098166'].split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ['-1002100546607'].split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5894098166').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ["5894098166"].split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ["-1002100546607"].split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', "5894098166").split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('-1001159872623')
+auth_channel = environ.get("-1001159872623")
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else auth_channel
 AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
 
