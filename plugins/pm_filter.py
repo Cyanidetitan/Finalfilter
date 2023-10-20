@@ -92,10 +92,10 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>Here Is Your Requested Movie {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>Here Is Your Requested Anime {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>Here Is Your Requested Movie {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>Here Is Your Requested Anime {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -111,9 +111,9 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>Here Is Your Requested Movie {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>Here Is Your Requested Anime {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>Here Is Your Requested Movie {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>Here Is Your Requested Anime {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
@@ -286,10 +286,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('⚡Channels⚡', url='https://t.me/MoveWilla_Links'),
+                    InlineKeyboardButton('⚡Channels⚡', url='https://t.me/Animxt'),
                 ]
                 ]
-            await query.message.edit(text="<b>Developer : <a href='https://t.me/TopLost3'>TopLost</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nGroup : <a href='https://t.me/MoveWilla1'>Movie Willa</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>Hosted by : <a href='https://t.me/Animxt'>Animxt</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nGroup : <a href='https://t.me/animechatterbox'>Anime Chatterbox</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -310,7 +310,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                     InlineKeyboardButton('⚡Channels⚡', url='https://t.me/MoveWilla_Links'),
+                     InlineKeyboardButton('⚡Channels⚡', url='https://t.me/Animxt'),
                     ]
                     ]
                 
@@ -323,7 +323,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
         elif query.data.startswith("checksub"):
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
+                await query.answer("I know you dont like to join but it is necessary for us to continue this service ⚡",show_alert=True)
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
@@ -341,7 +341,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('⚡Channels⚡', url='https://t.me/MoveWilla_Links'),
+                        InlineKeyboardButton('⚡Channels⚡', url='https://t.me/Animxt'),
                     ]
                     ]
                 
