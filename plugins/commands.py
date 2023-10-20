@@ -34,7 +34,7 @@ async def start(bot, cmd):
                                 InlineKeyboardButton("⚡Join Channel⚡", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton("🔮Try Again🔮", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -66,8 +66,8 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🌟Channels🌟', url='https://t.me/MoveWilla_Links'),
-                        InlineKeyboardButton('🍿Group🍿', url='https://t.me/MoveWilla1')
+                        InlineKeyboardButton('🌟Channels🌟', url='https://t.me/animxt'),
+                        InlineKeyboardButton('🍿Group🍿', url='https://t.me/animechatterbox')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -100,11 +100,11 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Source Code", url='https://github.com/staneswilson/Media-Search-bot-v2'),
+                        InlineKeyboardButton("Ongoing Animes", url='https://t.me/latest_ongoing_airing_anime'),
                     ],
                    [
-                       InlineKeyboardButton("⚡Channel⚡", url='https://t.me/MoveWilla_Links'),
-                       InlineKeyboardButton("🍿Group🍿", url='https://t.me/MoveWilla1'),
+                       InlineKeyboardButton("⚡Channel⚡", url='https://t.me/Animxt'),
+                       InlineKeyboardButton("🍿Group🍿", url='https://t.me/Animechatterbox'),
                     ],
                      [
                         InlineKeyboardButton("About", callback_data="about")
@@ -196,18 +196,18 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('⚡Channel⚡', url='https://t.me/MoveWilla_Links'),
-            InlineKeyboardButton('🍿Group🍿', url='https://t.me/MoveWilla1')
+            InlineKeyboardButton('⚡Channel⚡', url='https://t.me/Animxt'),
+            InlineKeyboardButton('🍿Group🍿', url='https://t.me/Animechatterbox')
         ]
         ]
-    await message.reply(text="<b>Developer👷‍♂️ : <a href='https://t.me/TopLost3'>TopLost</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/TopLost3/Media-Search-bot-V2'>Click here</a>\n🌟Channel🌟 : <a href='https://t.me/MoveWilla_Links'>Movie Willa</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Developer👷‍♂️ : <a href='https://t.me/kenkanekisama'>TopLost</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n🗂️Hosted by : <a href='https://t.me/animxt'>Know more</a>\n🌟Channel🌟 : <a href='https://t.me/Animxt'>Animxt</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 @Client.on_message(filters.command('help'))
 async def bot_info(bot, message):
     buttons = [
         [
-             InlineKeyboardButton('⚡Channel⚡', url='https://t.me/MoveWilla_Links'),
-            InlineKeyboardButton('🍿Group🍿', url='https://t.me/MoveWilla1')
+             InlineKeyboardButton('⚡Channel⚡', url='https://t.me/Animxt'),
+            InlineKeyboardButton('🍿Group🍿', url='https://t.me/Animechatterbox')
         ]
         ]
     await message.reply(text="<b>If You Have Any Doubts And If Any Errors In Codes Or Bugs Inform Our Developer</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -271,7 +271,7 @@ async def showinfo(client, message):
         f"<b>UserID</b> : <code>{id}</code>\n"
         f"<b>Username Name</b> : {user_name}\n"
         f"<b>Permanant USER Link</b> : <a href='tg://user?id={id}'>Link ❗️</a>\n\n"
-        f"<b>@ErrorXBotz</b>",
+        f"<b>@animxt</b>",
         quote=True,
         parse_mode="html"
     )
