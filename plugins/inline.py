@@ -91,7 +91,7 @@ def get_reply_markup(query):
     buttons = [
         [
             InlineKeyboardButton('Search again', url='https://t.me/pavillionbot'),
-            
+        ]   
         ]
     return InlineKeyboardMarkup(buttons)
 
