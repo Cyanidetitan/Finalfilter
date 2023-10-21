@@ -286,7 +286,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('⚡Channels⚡', url='https://t.me/Animxt'),
+                    InlineKeyboardButton('⚡Channels⚡', url='https://t.me/MemesPavillion'),
                 ]
                 ]
             await query.message.edit(text="<b>Hosted by : <a href='https://t.me/Animxt'>Animxt</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nGroup : <a href='https://t.me/animechatterbox'>Anime Chatterbox</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -310,7 +310,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                     InlineKeyboardButton('⚡Channels⚡', url='https://t.me/Animxt'),
+                     InlineKeyboardButton('⚡Comments⚡', url='https://t.me/+mU3YQy0zDOQ0NzE1'),
+                     InlineKeyboardButton('⚡Index⚡', url='https://t.me/+4xP8jbr3GjFiZTg1'),    
                     ]
                     ]
                 
@@ -341,7 +342,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('⚡Channels⚡', url='https://t.me/Animxt'),
+                        InlineKeyboardButton('⚡Comments⚡', url='https://t.me/+mU3YQy0zDOQ0NzE1'),
+                        InlineKeyboardButton('✨Index✨', url='https://t.me/+4xP8jbr3GjFiZTg1'),
                     ]
                     ]
                 
