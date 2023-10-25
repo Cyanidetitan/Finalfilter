@@ -4,7 +4,7 @@ from os import environ
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'Mediasearch')
+SESSION = environ.get('SESSION', 'Media_Search')
 API_ID = 10247139
 API_HASH = "96b46175824223a33737657ab943fd6a"
 BOT_TOKEN = "6730160843:AAEgtShMXPi-pVqDX7uF4miCvpO07uHlYRQ"
