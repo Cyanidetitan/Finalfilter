@@ -25,12 +25,12 @@ AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
 # MongoDB information
 DATABASE_URI = 'mongodb+srv://480p:encode@cluster0.7fgwrif.mongodb.net/?retryWrites=true&w=majority'
 DATABASE_NAME = 'terabhai'
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'library')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'libray')
 
 # Messages
 default_start_msg = """
-**Hi, I'm Pavillion**
-Here you can search files in Inline mode as well as PM, Use the below buttons to search files or send me the name of Anime to search.
+**Hi**
+Here you can search files in Inline mode as well as PM, Use the below buttons to search files or send me the name of Anime to search, Unable to see full filename , no problem just turn your phone in horizontal direction
 """
 START_MSG = environ.get('START_MSG', default_start_msg)
 
