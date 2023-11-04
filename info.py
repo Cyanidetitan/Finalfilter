@@ -25,7 +25,7 @@ AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
 # MongoDB information
 DATABASE_URI = 'mongodb+srv://480p:encode@cluster0.7fgwrif.mongodb.net/?retryWrites=true&w=majority'
 DATABASE_NAME = 'terabhai'
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'libray')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'libry')
 
 # Messages
 default_start_msg = """
