@@ -7,7 +7,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'Media_Search')
 API_ID = 10247139
 API_HASH = "96b46175824223a33737657ab943fd6a"
-BOT_TOKEN = "6730160843:AAFiS3X0ImIzIA2JkGXJ3LgaYgJhJfgdm1c"
+BOT_TOKEN = "6559513905:AAGpz_JC8WUZlQCbbGilS1qCQwnBbF6u8hQ"
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -25,7 +25,7 @@ AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
 # MongoDB information
 DATABASE_URI = 'mongodb+srv://480p:encode@cluster0.7fgwrif.mongodb.net/?retryWrites=true&w=majority'
 DATABASE_NAME = 'terabhai'
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'libry')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'libory')
 
 # Messages
 default_start_msg = """
