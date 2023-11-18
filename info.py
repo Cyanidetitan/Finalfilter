@@ -34,7 +34,7 @@ Here you can search files in Inline mode as well as PM, Use the below buttons to
 """
 START_MSG = environ.get('START_MSG', default_start_msg)
 
-FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "")
+FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "📂 <b>File Name</b>: <code>{file_name}</code> \n\n")
 OMDB_API_KEY = environ.get("OMDB_API_KEY", "http://www.omdbapi.com/?i=tt3896198&apikey=67f23fef")
 if FILE_CAPTION.strip() == "":
     CUSTOM_FILE_CAPTION=None
